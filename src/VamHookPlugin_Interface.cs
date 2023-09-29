@@ -7,6 +7,12 @@ namespace var_browser
 {
     public partial class VamHookPlugin
     {
+        //liu修改UI显示和隐藏
+		公共 无效 LgShow （）
+		{
+			VamHook 插件。m_显示=  ! VamHook 插件。m_显示；
+			//LogUtil.Log("VamHookPlugin.m_Show:" + VamHookPlugin.m_Show);
+		}
         void OpenFileBrowser(string msg)
         {
             LogUtil.Log("receive OpenFileBrowser "+ msg);
